@@ -1,8 +1,8 @@
 #version: "3.9"
 services:
   web:
-    image: python-py:distroless
-#    build: .
+#    image:
+    build: .
     ports:
       - "8007:5000"
     volumes:
