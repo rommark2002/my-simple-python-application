@@ -41,7 +41,6 @@
 # import os
 # import openai
 # openai.organization = "org-KOnnLWJP5kUmNw0GwuxVT9DV"
-# openai.api_key = os.getenv("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")
 # openai.Model.list()
 
 import openai
