@@ -1,4 +1,4 @@
-FROM python:alpine3.17
+FROM python
 # FROM python:3.7-alpine as builder
 LABEL Manitainer="Charles" Application-name="E-comm Website"
 WORKDIR /code
