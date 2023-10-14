@@ -5,7 +5,8 @@ pipeline {
         repo = 'https://github.com/cmuriukin/my-simple-python-application.git' 
     }
     agent {
-      label 'my-node'
+            docker {
+                image: 'jenkins/jenkins:latest'
             }
 
     stages {
