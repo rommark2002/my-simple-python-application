@@ -4,7 +4,10 @@ pipeline {
         image = 'class17-docker-build-publish-pipeline'
         repo = 'https://github.com/cmuriukin/my-simple-python-application.git' 
     }
-    agent any
+    agent {
+      label 'my-node'
+            }
+
     stages {
         stage('Git Checkout/clone repo') {
             steps {
