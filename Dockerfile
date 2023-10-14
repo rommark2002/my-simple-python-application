@@ -1,4 +1,4 @@
-FROM     python:alpine3.17
+FROM -     python:alpine3.17
 LABEL    Creator="Charle" Application-name="Online website" version="V.1.0.0"
 WORKDIR  /code
 RUN	apk add --no-cache gcc musl-dev linux-headers
