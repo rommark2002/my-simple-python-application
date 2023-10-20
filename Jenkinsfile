@@ -32,4 +32,20 @@ pipeline {
             }
         }
     }
+    post {
+    success {
+    // One or more steps need to be included within each condition's block.
+    slackSend   color: 'good',
+                message: 'Docker image pushed successfully',
+                channel: '#class17',
+                tokenCredentialId: 'slack-jenkins-integration'
+    }
+    failure {
+    // One or more steps need to be included within each condition's block.
+    slackSend   color: 'danger',
+                message: 'Docker pipeline failed terribly',
+                channel: '#class17',
+                tokenCredentialId: 'slack-jenkins-integration'
+  }
+}
 }
